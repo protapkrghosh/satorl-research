@@ -16,19 +16,31 @@ const Portfolio = () => {
         </div>
 
         {/* Render the first 5 to 10 logos */}
-        <div className="">
+        <div className="relative">
+          <div className="border-b border-[#ebedf0f6] w-[99%] absolute -mt-3 ml-4 "></div>
+          <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[1.5%] ml-[96.5%] rotate-90"></div>
+          <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[10%] ml-[96.5%] rotate-90"></div>
+          {
+            showMore ? <>
+              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[18.5%] ml-[96.5%] rotate-90"></div>
+              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[27%] ml-[96.5%] rotate-90"></div>
+              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[36%] ml-[96.5%] rotate-90"></div>
+              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[44%] ml-[56.2%] rotate-90"></div>
+            </> : ''
+          }
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
             {companies.slice(0, showMore ? companies.length : 10).map((company, index) => (
               <div className="flex justify-center items-center border-l p-5 relative">
                 <img key={index} src={company.logo} alt='Image' className="w-auto h-7" />
-                <div className="border-b w-[95%] absolute -mt-20 ml-5 "></div>
+                <div className="border-t border-[#ebedf0f6] w-[95%] absolute -mb-[50%] ml-5"></div>
               </div>
             ))}
           </div>
         </div>
 
         {/* Render "See More" button */}
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-center mt-[45px]">
           <Link onClick={() => setShowMore(!showMore)} to="/" className="text-[#441611] text-[16px] font-dmSans font-semibold border border-[#E3E3E3] hover:border-[#d8d7d7] hover:bg-[#F6F4F2] w-[150px] py-3 flex justify-center items-center rounded-md group duration-200">
             <span>{showMore ? "Show Less" : "See More"}</span>
             {showMore ? <IoIosArrowUp className='text-[18px] ml-2 duration-200' /> : <IoIosArrowDown className='text-[18px] ml-2 duration-200' />}
