@@ -6,7 +6,7 @@ import avatar from '../../assets/header people/Group 71017.png'
 const Banner = () => {
   return (
     <Container>
-      <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-16 mb-20">
+      <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-16 mb-[85px]">
         {/* Contents */}
         <div className="md:w-1/2">
           <div className="flex items-center">
