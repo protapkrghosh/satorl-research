@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { companies } from "../../Data/data";
+import { companies } from "../../data/data";
 import Container from "../Container/Container";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
