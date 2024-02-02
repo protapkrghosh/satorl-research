@@ -17,7 +17,7 @@ const AboutUs = () => {
                 <img src={circleImg} alt="Image" className="w-[58px] md:w-[85px]" />
                 <p className="text-[#F6524E] text-[14px] md:text-[17px] font-semibold font-inter uppercase absolute top-7 left-7  md:top-[43px] md:left-[38px]">About Us</p>
               </div>
-              <h1 className="text-[38px] md:text-[35px] xl:text-[44px] text-[#441611] font-dmSerifDisplay capitalize leading-[58px] mb-[16px]">Innovating Visionary <br /> Solutions Together</h1>
+              <h1 className="text-[33px] md:text-[35px] xl:text-[44px] text-[#441611] font-dmSerifDisplay capitalize leading-[58px] mb-[16px]">Innovating Visionary <br /> Solutions Together</h1>
             </div>
 
             <div className="font-dmSans capitalize">
@@ -28,6 +28,7 @@ const AboutUs = () => {
 
               <div className="text-[#6F5D5B] md:w-[95%] xl:w-[83%] space-y-5">
                 <p>We invest in the potential of tomorrow, employing a keen, eagle-eyed approach to pinpoint opportunities that redefine what's possible.</p>
+
                 <p>Our global perspective, fortified by a robust Asian market presence, ensures that our partners are poised for international influence and success.</p>
               </div>
             </div>
