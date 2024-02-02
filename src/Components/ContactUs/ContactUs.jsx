@@ -1,0 +1,57 @@
+import Container from "../Container/Container";
+
+const ContactUs = () => {
+  return (
+    <div className="bg-[#F6F4F2] pt-[100px] pb-[120px]">
+      <Container>
+        <div className="md:flex">
+          <div className="w-1/2 md:pl-[40px] xl:pl-[60px]">
+            <h2 className="text-[33px] md:text-[32px] xl:text-[41px] text-[#441611] font-dmSerifDisplay capitalize leading-[58px]">Let's start the <br /> conversation here</h2>
+            <p className="text-[#6F5D5B] font-dmSans capitalize w-full md:w-[80%] xl:w-[71%]">Your success is our mission. As business advisors, we offer expert guidance, unlocking your potential for growth and profitability.</p>
+          </div>
+
+          {/* Contact Form */}
+          <div className="w-1/2 mx-5">
+            <form className="">
+              <div className="flex gap-x-4 mb-3">
+                <div className="form-control w-1/2">
+                  <label className="label mb-1">
+                    <span className="label-text text-[#6F5D5B] font-dmSans">Full Name</span>
+                  </label>
+                  <input type="text" placeholder="Your Full Name" className="input placeholder:text-[14px] placeholder:text-[#6F5D5B] pl-3 font-semibold font-dmSans border border-[#e5d8d7b2]" required />
+                </div>
+
+                <div className="form-control w-1/2">
+                  <label className="label mb-1">
+                    <span className="label-text text-[#6F5D5B] font-dmSans">Email</span>
+                  </label>
+                  <input type="email" placeholder="Example@Venture.Com" className="input placeholder:text-[14px] placeholder:text-[#6F5D5B] pl-3 font-semibold font-dmSans border border-[#e5d8d7b2]" required />
+                </div>
+              </div>
+
+              <div className="form-control mb-3">
+                <label className="label mb-1">
+                  <span className="label-text text-[#6F5D5B] font-dmSans">Subject</span>
+                </label>
+                <input type="text" placeholder="Example@Venture.Com" className="input placeholder:text-[14px] placeholder:text-[#6F5D5B] pl-3 font-semibold font-dmSans border border-[#e5d8d7b2]" required />
+              </div>
+
+              <label className="form-control">
+                <div className="label mb-1">
+                  <span className="label-text text-[#6F5D5B] font-dmSans">Message</span>
+                </div>
+                <textarea className="textarea h-36 placeholder:text-[14px] placeholder:text-[#6F5D5B] pl-3 font-semibold font-dmSans border border-[#e5d8d7b2]" placeholder="Text Here..."></textarea>
+              </label>
+
+              <div className="form-control mt-6">
+                <input type="submit" value="Send Message" className="bg-[#9B0801] text-white text-[16px] px-8 py-3 rounded-md w-40 cursor-pointer" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </Container>
+    </div>
+  );
+};
+
+export default ContactUs;
