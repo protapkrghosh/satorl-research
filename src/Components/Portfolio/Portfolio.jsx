@@ -15,12 +15,13 @@ const Portfolio = () => {
           <p className="text-[#6F5D5B] font-dmSans capitalize w-full md:w-[46%] xl:w-[41%] mx-auto mt-4 mb-10">Discover our portfolio for a glimpse into our expertise, showcasing achievements and diverse capabilities.</p>
         </div>
 
-          {/* Render the first 5 to 10 logos */}
+        {/* Render the first 5 to 10 logos */}
         <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-5">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
             {companies.slice(0, showMore ? companies.length : 10).map((company, index) => (
-              <div className="flex justify-center items-center border p-5">
+              <div className="flex justify-center items-center border-l p-5 relative">
                 <img key={index} src={company.logo} alt='Image' className="w-auto h-7" />
+                <div className="border-b w-[95%] absolute -mt-20 ml-5 "></div>
               </div>
             ))}
           </div>
