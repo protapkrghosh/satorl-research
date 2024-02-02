@@ -5,9 +5,8 @@ import Banner from "../../Components/Banner/Banner";
 const Home = () => {
   return (
     <div>
-      {/* <h3>This is home page</h3> */}
-      <Innovation></Innovation>
       <Banner />
+      <Innovation />
       <AboutUs />
     </div>
   );
