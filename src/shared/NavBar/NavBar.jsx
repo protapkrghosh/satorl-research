@@ -38,9 +38,10 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="/" className="bg-[#9B0801] text-white text-[16px] px-8 py-3 flex items-center rounded-md group">
+          <Link to="/" className="bg-[#9B0801] text-white text-[16px] font-dmSans w-[150px] py-3 flex justify-center items-center rounded-md group">
             <span className=''>Contact</span>
-            <MdArrowOutward className='text-[18px] ml-2' /></Link>
+            <MdArrowOutward className='text-[18px] ml-2' />
+          </Link>
         </div>
       </div>
     </Container>
