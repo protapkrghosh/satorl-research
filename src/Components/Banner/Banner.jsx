@@ -18,19 +18,19 @@ const Banner = () => {
           </div>
 
           <div className="text-[42px] md:text-[62px] text-[#441611] font-dmSerifDisplay">
-            <div className="flex items-center">
+            <div className="flex items-center" data-aos="fade-up" data-aos-duration="600">
               <h2 className="mr-3">Fostering</h2>
               <img src={avatar} alt="Peoples" className="w-[120px] mt-3" />
             </div>
-            <h2 className="md:-my-5">The <span className="text-[#9B0801]">Blockchain</span></h2>
-            <h2>Renaissance</h2>
+            <h2 className="md:-my-5" data-aos="fade-up" data-aos-duration="800">The <span className="text-[#9B0801]">Blockchain</span></h2>
+            <h2 data-aos="fade-up" data-aos-duration="1000">Renaissance</h2>
           </div>
 
-          <p className="text-[#5D423F] font-dmSans capitalize w-[86%] mt-1">the transformative power of blockchain and its capacity to redefine economies. We invest in the potential.</p>
+          <p className="text-[#5D423F] font-dmSans capitalize w-[86%] mt-1" data-aos="fade-up" data-aos-duration="1500">the transformative power of blockchain and its capacity to redefine economies. We invest in the potential.</p>
         </div>
 
         {/* Image */}
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 mt-14 md:mt-0" data-aos="zoom-in" data-aos-duration="1000">
           <img src={bannerImg} alt="Image" className="w-[80%] md:w-full mx-auto" />
         </div>
       </div>
