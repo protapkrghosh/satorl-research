@@ -12,7 +12,7 @@ const ContactUs = () => {
   const onSubmit = (data) => console.log(data)
 
   return (
-    <div className="bg-[#F6F4F2] pt-[100px] pb-[120px]">
+    <div className="bg-[#F6F4F2] pt-[100px] pb-[120px]" id="contact">
       <Container>
         <div className="md:flex">
           <div className="md:w-1/2 md:pl-[40px] xl:pl-[60px] mb-12 md:mb-0">
