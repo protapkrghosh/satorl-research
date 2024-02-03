@@ -58,7 +58,7 @@ const ContactUs = () => {
               </label>
 
               <div className="form-control mt-6">
-                <input type="submit" value="Send Message" className="bg-[#9B0801] text-white text-[15px] font-dmSans px-8 py-3 rounded-md w-[150px] flex justify-center cursor-pointer" />
+                <input type="submit" value="Send Message" className="bg-[#9B0801] hover:bg-[#9b0901d8] text-white text-[15px] font-dmSans px-8 py-3 rounded-md w-[150px] flex justify-center cursor-pointer duration-200" />
               </div>
             </form>
           </div>

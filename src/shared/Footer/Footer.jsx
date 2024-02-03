@@ -12,10 +12,10 @@ const Footer = () => {
           </Link>
 
           <div className='font-dmSans flex flex-col md:flex-row gap-y-3 md:gap-x-10 text-white mt-5 md:mt-0'>
-            <Link to="/">Home</Link>
-            <Link to="/">Portfolio</Link>
-            <Link to="/">About</Link>
-            <Link to="/">Contact</Link>
+            <Link to="/" className='hover:underline'>Home</Link>
+            <Link to="/" className='hover:underline'>Portfolio</Link>
+            <Link to="/" className='hover:underline'>About</Link>
+            <Link to="/" className='hover:underline'>Contact</Link>
           </div>
         </div>
       </Container>

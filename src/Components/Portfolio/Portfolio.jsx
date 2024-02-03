@@ -17,7 +17,7 @@ const Portfolio = () => {
 
         {/* Render the first 5 to 10 logos */}
         <div className="relative">
-          <div className="border-b border-[#ebedf0f6] w-[99%] absolute -mt-3 ml-4 "></div>
+          <div className="md:border-b border-[#ebedf0f6] w-[99%] absolute -mt-3 ml-4 "></div>
           <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[1%] ml-[96.5%] rotate-90"></div>
           <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[8.8%] ml-[96.5%] rotate-90"></div>
           {
@@ -25,7 +25,7 @@ const Portfolio = () => {
               <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[16.2%] ml-[96.5%] rotate-90"></div>
               <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[23.5%] ml-[96.5%] rotate-90"></div>
               <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[31%] ml-[96.5%] rotate-90"></div>
-              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[38.6%] ml-[56.6%] rotate-90"></div>
+              <div className="md:border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[38.6%] ml-[56.6%] rotate-90"></div>
             </> : ''
           }
 
