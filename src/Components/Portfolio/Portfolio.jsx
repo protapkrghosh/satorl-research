@@ -22,21 +22,37 @@ const Portfolio = () => {
           <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[8.8%] ml-[96.5%] rotate-90"></div>
           {
             showMore ? <>
-              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[16.2%] ml-[96.5%] rotate-90"></div>
-              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[23.5%] ml-[96.5%] rotate-90"></div>
-              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[31%] ml-[96.5%] rotate-90"></div>
-              <div className="md:border-t border-[#ebedf0f6] w-16 h-10 absolute mt-[38.6%] ml-[56.6%] rotate-90"></div>
+              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute lg:mt-[17.2%] xl:mt-[17.2%] ml-[96.5%] rotate-90"></div>
+              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute lg:mt-[25%] xl:mt-[26.2%] ml-[96.5%] rotate-90"></div>
+              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute lg:mt-[32.5%] xl:mt-[35%] ml-[96.5%] rotate-90"></div>
+              <div className="md:border-t border-[#ebedf0f6] w-16 h-10 absolute lg:mt-[40%] xl:mt-[44%] ml-[76.6%] rotate-90"></div>
             </> : ''
           }
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
-            {companies.slice(0, showMore ? companies.length : 10).map((company, index) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-5">
+            {companies.slice(0, showMore ? 25 : 10).map((company, index) => (
               <div key={index} className="flex justify-center items-center border-l p-5 relative group">
                 <img src={company.logo} alt='Image' className="w-auto h-7 group-hover:scale-110 duration-300" />
                 <div className="border-t border-[#ebedf0f6] w-[95%] absolute -mb-[42%] ml-5"></div>
               </div>
             ))}
           </div>
+
+          {/* last three card */}
+          {
+            !showMore ? '' : (
+              <div>
+                <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-subgrid gap-5 lg:w-[59%] mx-auto mt-4">
+                  {companies.slice(25, 28).map((company, index) => (
+                    <div key={index} className="flex justify-center items-center border-l p-5 relative group">
+                      <img src={company.logo} alt='Image' className="w-auto h-7 group-hover:scale-110 duration-300" />
+                      <div className="border-t border-[#ebedf0f6] w-[95%] absolute -mb-[42%] ml-5"></div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )
+          }
         </div>
 
         {/* Render "See More" button */}
@@ -52,3 +68,5 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+
