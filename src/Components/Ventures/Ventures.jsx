@@ -7,8 +7,8 @@ const Ventures = () => {
       <Container>
         <div className="md:flex items-center xl:gap-x-20">
           <div className="relative md:w-1/2 md:ml-10">
-            <div className="absolute bottom-[98px] md:bottom-[95px] -left-[10px] md:-left-[40px] w-full">
-              <img src={circleImg} alt="Image" className="w-[58px] md:w-[85px]" />
+            <div className="absolute bottom-[98px] md:bottom-[95px] -left-[10px] md:-left-[40px] w-full" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800" >
+              <img src={circleImg} alt="Image" className="w-[58px] md:w-[85px]"/>
               <p className="text-[#F6524E] text-[14px] md:text-[17px] font-semibold font-inter uppercase absolute top-7 left-7 md:top-[43px] md:left-[38px]">Our Thesis</p>
             </div>
             <h1 className="text-[33px] md:text-[32px] xl:text-[41px] text-[#441611] font-dmSerifDisplay capitalize leading-[58px]">Satori Ventures <br /> investment philosophy</h1>

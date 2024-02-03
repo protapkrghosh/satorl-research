@@ -11,7 +11,10 @@ const Banner = () => {
         <div className="md:w-1/2">
           <div className="flex items-center">
             <p className="text-[#F6524E] text-[15px] font-semibold font-inter uppercase mr-2">Satori Ventures</p>
-            <img src={icon} alt="Icon" />
+            <div className="relative">
+              <img src={icon} alt="Icon" />
+              <div className="animate-ping absolute top-0 inline-flex h-5 w-5 bg-[#F6524E] rounded-full opacity-40"></div>
+            </div>
           </div>
 
           <div className="text-[42px] md:text-[62px] text-[#441611] font-dmSerifDisplay">
