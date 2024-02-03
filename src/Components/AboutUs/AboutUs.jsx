@@ -6,14 +6,14 @@ const AboutUs = () => {
   return (
     <Container>
       <div className="md:flex justify-between items-center my-32">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800">
           <img src={aboutImg} alt="Image" />
         </div>
 
         <div className="md:w-1/2 md:-mr-8 xl:-mr-20 mt-20 md:mt-6">
           <div>
             <div className="relative">
-              <div className="absolute bottom-[98px] md:bottom-[90px] -left-[10px] md:-left-[44px] w-full">
+              <div className="absolute bottom-[98px] md:bottom-[90px] -left-[10px] md:-left-[44px] w-full" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
                 <img src={circleImg} alt="Image" className="w-[58px] md:w-[85px]" />
                 <p className="text-[#F6524E] text-[14px] md:text-[17px] font-semibold font-inter uppercase absolute top-7 left-7  md:top-[43px] md:left-[38px]">About Us</p>
               </div>

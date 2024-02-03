@@ -13,7 +13,7 @@ const Innovation = () => {
 
           {/* Cards  */}
           <div className='md:flex justify-center gap-6 mt-10 px-3'>
-            <div className='flex justify-around items-center bg-white md:w-[450px] xl:w-[507px] h-[150px] rounded-xl mb-6 md:mb-0'>
+            <div className='flex justify-around items-center bg-white md:w-[450px] xl:w-[507px] h-[150px] rounded-xl mb-6 md:mb-0' data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
               <div>
                 <CountUp start={0}
                   end={20}
@@ -30,7 +30,7 @@ const Innovation = () => {
               </div>
             </div>
 
-            <div className='flex justify-around items-center bg-white  md:w-[450px] xl:w-[507px] h-[150px] rounded-xl'>
+            <div className='flex justify-around items-center bg-white  md:w-[450px] xl:w-[507px] h-[150px] rounded-xl' data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
               <div>
                 <CountUp
                   start={0}

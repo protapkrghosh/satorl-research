@@ -11,7 +11,7 @@ const Portfolio = () => {
     <div className="my-32">
       <Container>
         <div className="text-center">
-          <h2 className="text-[33px] md:text-[32px] xl:text-[41px] text-[#441611] font-dmSerifDisplay capitalize leading-[58px]">Let’s see Our portfolio</h2>
+          <h2 className="text-[33px] md:text-[32px] xl:text-[41px] text-[#441611] font-dmSerifDisplay capitalize leading-[58px]" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">Let’s see Our portfolio</h2>
           <p className="text-[#6F5D5B] font-dmSans capitalize w-full md:w-[46%] xl:w-[41%] mx-auto mt-4 mb-10">Discover our portfolio for a glimpse into our expertise, showcasing achievements and diverse capabilities.</p>
         </div>
 
@@ -40,7 +40,7 @@ const Portfolio = () => {
         </div>
 
         {/* Render "See More" button */}
-        <div className="flex justify-center mt-[45px]">
+        <div className="flex justify-center mt-[45px] 2xl:mt-[90px]">
           <Link onClick={() => setShowMore(!showMore)} to="/" className="text-[#441611] text-[16px] font-dmSans font-semibold border border-[#E3E3E3] hover:border-[#d8d7d7] hover:bg-[#F6F4F2] w-[150px] py-3 flex justify-center items-center rounded-md group duration-200">
             <span>{showMore ? "Show Less" : "See More"}</span>
             {showMore ? <IoIosArrowUp className='text-[18px] ml-2 duration-300 group-hover:rotate-180' /> : <IoIosArrowDown className='text-[18px] ml-2 duration-300 group-hover:rotate-180' />}
