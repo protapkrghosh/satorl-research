@@ -25,8 +25,11 @@ const Innovation = () => {
                 <p className='font-inter text-[#5D423F] text-[17px] capitalize'>Investment in USD</p>
               </div>
 
-              <div className='bg-[#441611] w-14 h-14 rounded-full flex justify-center items-center'>
-                <FiDollarSign className='text-[32px] text-white' />
+              <div className='relative'>
+                <div className='bg-[#441611] w-14 h-14 rounded-full flex justify-center items-center'>
+                  <FiDollarSign className='text-[32px] text-white' />
+                </div>
+                <div className="animate-ping absolute top-2 left-2 inline-flex h-10 w-10 bg-[#441611] rounded-full opacity-50"></div>
               </div>
             </div>
 
@@ -42,9 +45,14 @@ const Innovation = () => {
                 />
                 <p className='font-inter text-[#5D423F] text-[17px] capitalize'>Number Of Investments</p>
               </div>
-              <div className='bg-[#441611] w-14 h-14 rounded-full flex justify-center items-center'>
-                <HiOutlineHashtag className='text-[32px] text-white'/>
+
+              <div className="relative">
+                <div className='bg-[#441611] w-14 h-14 rounded-full flex justify-center items-center'>
+                  <HiOutlineHashtag className='text-[32px] text-white' />
+                </div>
+                <div className="animate-ping absolute top-2 left-2 inline-flex h-10 w-10 bg-[#441611] rounded-full opacity-50"></div>
               </div>
+
             </div>
           </div>
         </div>

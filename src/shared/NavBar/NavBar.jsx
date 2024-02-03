@@ -9,10 +9,10 @@ const NavBar = () => {
     <NavLink to="/" className='mt-2 text-[#6B6463]' style={({ isActive, isPending }) => {
       return { fontWeight: isActive ? "bold" : "#030000", color: isPending ? "#030000" : "#030000", };
     }}> Home </NavLink>
-    <Link to="about" smooth={true} offset={-150} duration={600} className='mt-2 text-[#6B6463] mx-[50px] cursor-pointer' style={({ isActive, isPending }) => {
+    <Link to="about" smooth={true} offset={-130} duration={600} className='mt-2 text-[#6B6463] mx-[50px] cursor-pointer' style={({ isActive, isPending }) => {
       return { fontWeight: isActive ? "bold" : "", color: isPending ? "#030000" : "#030000", };
     }}> About </Link>
-    <Link to="portfolio" smooth={true} offset={-150} duration={600} className='mt-2 text-[#6B6463] cursor-pointer' style={({ isActive, isPending }) => {
+    <Link to="portfolio" smooth={true} offset={-130} duration={700} className='mt-2 text-[#6B6463] cursor-pointer' style={({ isActive, isPending }) => {
       return { fontWeight: isActive ? "bold" : "", color: isPending ? "#030000" : "#030000", };
     }}> Portfolio </Link>
   </>
