@@ -43,7 +43,7 @@ const Portfolio = () => {
         <div className="flex justify-center mt-[45px]">
           <Link onClick={() => setShowMore(!showMore)} to="/" className="text-[#441611] text-[16px] font-dmSans font-semibold border border-[#E3E3E3] hover:border-[#d8d7d7] hover:bg-[#F6F4F2] w-[150px] py-3 flex justify-center items-center rounded-md group duration-200">
             <span>{showMore ? "Show Less" : "See More"}</span>
-            {showMore ? <IoIosArrowUp className='text-[18px] ml-2 duration-200' /> : <IoIosArrowDown className='text-[18px] ml-2 duration-200' />}
+            {showMore ? <IoIosArrowUp className='text-[18px] ml-2 duration-300 group-hover:rotate-180' /> : <IoIosArrowDown className='text-[18px] ml-2 duration-300 group-hover:rotate-180' />}
           </Link>
         </div>
       </Container>
