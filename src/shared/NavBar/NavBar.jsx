@@ -1,4 +1,5 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import img from '../../assets/logo/design 1.png'
 import Container from '../../Components/Container/Container';
 import { MdArrowOutward } from "react-icons/md";
@@ -8,12 +9,12 @@ const NavBar = () => {
     <NavLink to="/" className='mt-2 text-[#6B6463]' style={({ isActive, isPending }) => {
       return { fontWeight: isActive ? "bold" : "#030000", color: isPending ? "#030000" : "#030000", };
     }}> Home </NavLink>
-    <NavLink to="/about" className='mt-2 text-[#6B6463] mx-[50px]' style={({ isActive, isPending }) => {
+    <Link to="about" smooth={true} offset={-150} duration={500} className='mt-2 text-[#6B6463] mx-[50px] cursor-pointer' style={({ isActive, isPending }) => {
       return { fontWeight: isActive ? "bold" : "", color: isPending ? "#030000" : "#030000", };
-    }}> About </NavLink>
-    <NavLink to="/portfolio" className='mt-2 text-[#6B6463]' style={({ isActive, isPending }) => {
+    }}> About </Link>
+    <Link to="portfolio" smooth={true} offset={-150} duration={500} className='mt-2 text-[#6B6463] cursor-pointer' style={({ isActive, isPending }) => {
       return { fontWeight: isActive ? "bold" : "", color: isPending ? "#030000" : "#030000", };
-    }}> Portfolio </NavLink>
+    }}> Portfolio </Link>
   </>
 
   return (

@@ -10,7 +10,7 @@ const Portfolio = () => {
   return (
     <div className="my-32">
       <Container>
-        <div className="text-center">
+        <div className="text-center" id="portfolio">
           <h2 className="text-[33px] md:text-[32px] xl:text-[41px] text-[#441611] font-dmSerifDisplay capitalize leading-[58px]">Let’s see Our portfolio</h2>
           <p className="text-[#6F5D5B] font-dmSans capitalize w-full md:w-[46%] xl:w-[41%] mx-auto mt-4 mb-10">Discover our portfolio for a glimpse into our expertise, showcasing achievements and diverse capabilities.</p>
         </div>
