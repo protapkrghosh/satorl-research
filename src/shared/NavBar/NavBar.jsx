@@ -1,4 +1,5 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import img from '../../assets/logo/design 1.png'
 import Container from '../../Components/Container/Container';
 import { MdArrowOutward } from "react-icons/md";
@@ -8,12 +9,12 @@ const NavBar = () => {
     <NavLink to="/" className='mt-2 text-[#6B6463]' style={({ isActive, isPending }) => {
       return { fontWeight: isActive ? "bold" : "#030000", color: isPending ? "#030000" : "#030000", };
     }}> Home </NavLink>
-    <NavLink to="/about" className='mt-2 text-[#6B6463] mx-[50px]' style={({ isActive, isPending }) => {
+    <Link to="about" smooth={true} offset={-130} duration={600} className='mt-2 text-[#6B6463] mx-[50px] cursor-pointer' style={({ isActive, isPending }) => {
       return { fontWeight: isActive ? "bold" : "", color: isPending ? "#030000" : "#030000", };
-    }}> About </NavLink>
-    <NavLink to="/portfolio" className='mt-2 text-[#6B6463]' style={({ isActive, isPending }) => {
+    }}> About </Link>
+    <Link to="portfolio" smooth={true} offset={-130} duration={700} className='mt-2 text-[#6B6463] cursor-pointer' style={({ isActive, isPending }) => {
       return { fontWeight: isActive ? "bold" : "", color: isPending ? "#030000" : "#030000", };
-    }}> Portfolio </NavLink>
+    }}> Portfolio </Link>
   </>
 
   return (
@@ -29,7 +30,7 @@ const NavBar = () => {
             </ul>
           </div>
           <Link>
-            <img src={img} alt="Logo" />
+            <img src={img} alt="Logo" className='cursor-pointer' />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -38,7 +39,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="/" className="bg-[#9B0801] hover:bg-[#9b0901d8] text-white text-[16px] font-dmSans w-[150px] py-3 flex justify-center items-center rounded-md group">
+          <Link to="contact" smooth={true} offset={-150} duration={700} className="bg-[#9B0801] hover:bg-[#9b0901d8] text-white text-[16px] font-dmSans w-[150px] py-3 flex justify-center items-center rounded-md group cursor-pointer">
             <span className=''>Contact</span>
             <MdArrowOutward className='text-[18px] ml-2 group-hover:-mt-2 duration-300' />
           </Link>
