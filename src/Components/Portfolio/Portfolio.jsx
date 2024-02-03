@@ -8,7 +8,7 @@ const Portfolio = () => {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <div className="my-32">
+    <div className="my-32" id="portfolio">
       <Container>
         <div className="text-center">
           <h2 className="text-[33px] md:text-[32px] xl:text-[41px] text-[#441611] font-dmSerifDisplay capitalize leading-[58px]" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">Let’s see Our portfolio</h2>
