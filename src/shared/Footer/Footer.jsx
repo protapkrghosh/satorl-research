@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import img from '../../assets/footer/Group 71033.png'
 import Container from '../../Components/Container/Container';
 
@@ -8,14 +8,14 @@ const Footer = () => {
       <Container>
         <div className='md:flex md:justify-between items-center mb-12'>
           <Link to="/">
-            <img src={img} alt="Image" className='w-[130px]' />
+            <img src={img} alt="Image" className='w-[130px] cursor-pointer' />
           </Link>
 
           <div className='font-dmSans flex flex-col md:flex-row gap-y-3 md:gap-x-10 text-white mt-5 md:mt-0'>
-            <Link to="/" className='hover:underline'>Home</Link>
-            <Link to="/" className='hover:underline'>Portfolio</Link>
-            <Link to="/" className='hover:underline'>About</Link>
-            <Link to="/" className='hover:underline'>Contact</Link>
+            <Link to="home" smooth={true} offset={-150} duration={700} className='hover:underline cursor-pointer'>Home</Link>
+            <Link to="portfolio" smooth={true} offset={-150} duration={600} className='hover:underline cursor-pointer'>Portfolio</Link>
+            <Link to="about" smooth={true} offset={-150} duration={600} className='hover:underline cursor-pointer'>About</Link>
+            <Link to="contact" smooth={true} offset={-150} duration={600} className='hover:underline cursor-pointer'>Contact</Link>
           </div>
         </div>
       </Container>
