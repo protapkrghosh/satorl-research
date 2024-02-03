@@ -5,7 +5,7 @@ import circleImg from '../../assets/about us/design 2.png'
 const AboutUs = () => {
   return (
     <Container>
-      <div className="md:flex justify-between items-center my-32">
+      <div className="md:flex justify-between items-center my-32" id="about">
         <div className="md:w-1/2" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800">
           <img src={aboutImg} alt="Image" />
         </div>

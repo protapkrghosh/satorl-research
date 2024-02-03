@@ -20,7 +20,7 @@ const Banner = () => {
           <div className="text-[42px] md:text-[62px] text-[#441611] font-dmSerifDisplay">
             <div className="flex items-center">
               <h2 className="mr-3">Fostering</h2>
-              <img src={avatar} alt="Peoples" className="w-[120px] mt-3"/>
+              <img src={avatar} alt="Peoples" className="w-[120px] mt-3" />
             </div>
             <h2 className="md:-my-5">The <span className="text-[#9B0801]">Blockchain</span></h2>
             <h2>Renaissance</h2>
