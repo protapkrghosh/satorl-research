@@ -39,7 +39,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="contact" smooth={true} offset={-150} duration={700} className="bg-[#9B0801] hover:bg-[#9b0901d8] text-white text-[16px] font-dmSans w-[150px] py-3 flex justify-center items-center rounded-md group cursor-pointer">
+          <Link to="contact" smooth={true} offset={0} duration={700} className="bg-[#9B0801] hover:bg-[#9b0901d8] text-white text-[16px] font-dmSans w-[150px] py-3 flex justify-center items-center rounded-md group cursor-pointer">
             <span className=''>Contact</span>
             <MdArrowOutward className='text-[18px] ml-2 group-hover:-mt-2 duration-300' />
           </Link>
