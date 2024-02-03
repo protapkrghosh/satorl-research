@@ -38,9 +38,9 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link to="/" className="bg-[#9B0801] text-white text-[16px] font-dmSans w-[150px] py-3 flex justify-center items-center rounded-md group">
+          <Link to="/" className="bg-[#9B0801] hover:bg-[#9b0901d8] text-white text-[16px] font-dmSans w-[150px] py-3 flex justify-center items-center rounded-md group">
             <span className=''>Contact</span>
-            <MdArrowOutward className='text-[18px] ml-2' />
+            <MdArrowOutward className='text-[18px] ml-2 group-hover:-mt-2 duration-300' />
           </Link>
         </div>
       </div>
