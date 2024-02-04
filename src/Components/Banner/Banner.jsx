@@ -26,12 +26,12 @@ const Banner = () => {
             <h2 data-aos="fade-up" data-aos-duration="1000">Renaissance</h2>
           </div>
 
-          <p className="text-[#5D423F] font-dmSans capitalize w-[86%] mt-1" data-aos="fade-up" data-aos-duration="1500">the transformative power of blockchain and its capacity to redefine economies. We invest in the potential.</p>
+          <p className="text-[#5D423F] font-dmSans capitalize w-[86%] 2xl:w-[54%] mt-1" data-aos="fade-up" data-aos-duration="1500">the transformative power of blockchain and its capacity to redefine economies. We invest in the potential.</p>
         </div>
 
         {/* Image */}
         <div className="md:w-1/2 mt-14 md:mt-0" data-aos="zoom-in" data-aos-duration="1000">
-          <img src={bannerImg} alt="Image" className="w-[80%] md:w-full mx-auto" />
+          <img src={bannerImg} alt="Image" className="w-[80%] xl:w-[80%] md:w-full mx-auto heroImg" />
         </div>
       </div>
     </Container>

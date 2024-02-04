@@ -7,7 +7,7 @@ const AboutUs = () => {
     <Container>
       <div className="md:flex justify-between items-center my-32" id="about">
         <div className="md:w-1/2" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800">
-          <img src={aboutImg} alt="Image" />
+          <img src={aboutImg} alt="Image" className="xl:w-[80%] heroImg" />
         </div>
 
         <div className="md:w-1/2 md:-mr-8 xl:-mr-20 mt-20 md:mt-6">
@@ -21,12 +21,12 @@ const AboutUs = () => {
             </div>
 
             <div className="font-dmSans capitalize">
-              <p className="text-[20px] font-semibold mb-[30px] w-full md:w-[95%]">
+              <p className="text-[20px] font-semibold mb-[30px] w-full md:w-[95%] 2xl:w-[50%]">
                 <span className="text-[#7c5c58]">At Satori Ventures,</span>
                 <span className="text-[#8a8686]"> we recognize the transformative power of blockchain</span>
               </p>
 
-              <div className="text-[#6F5D5B] md:w-[95%] xl:w-[83%] space-y-5">
+              <div className="text-[#6F5D5B] md:w-[95%] xl:w-[83%] 2xl:w-[53%] space-y-5">
                 <p>We invest in the potential of tomorrow, employing a keen, eagle-eyed approach to pinpoint opportunities that redefine what's possible.</p>
 
                 <p>Our global perspective, fortified by a robust Asian market presence, ensures that our partners are poised for international influence and success.</p>

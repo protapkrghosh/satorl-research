@@ -21,16 +21,29 @@ const NavBar = () => {
     <Container>
       <div className="navbar font-dmSans mt-5 px-0">
         <div className="navbar-start">
-          <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          <div className="drawer w-fit mr-2 md:hidden">
+            <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+            <div className="drawer-content">
+              {/* Page content here */}
+              <label htmlFor="my-drawer">
+                <label htmlFor="my-drawer" className="">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+              </label>
             </div>
-            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-5 shadow bg-[#ecebe9] rounded-md w-60 h-40">
-              {navOptions}
-            </ul>
+            <div className="drawer-side z-10">
+              <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+              <ul className="menu p-4 w-52 min-h-full bg-[#ecebe9] text-base-content">
+                {/* Sidebar content here */}
+                <img src={img} alt="Logo" className='cursor-pointer w-32' />
+                {navOptions}
+
+              </ul>
+            </div>
           </div>
-          <Link>
-            <img src={img} alt="Logo" className='cursor-pointer' />
+
+          <Link to="">
+            <img src={img} alt="Logo" className='cursor-pointer w-36 md:w-full' />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
