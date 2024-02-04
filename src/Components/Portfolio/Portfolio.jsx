@@ -12,7 +12,8 @@ const Portfolio = () => {
       <Container>
         <div className="text-center">
           <h2 className="text-[33px] md:text-[32px] xl:text-[41px] text-[#441611] font-dmSerifDisplay capitalize leading-[58px]" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">Let’s see Our portfolio</h2>
-          <p className="text-[#6F5D5B] font-dmSans capitalize w-full md:w-[46%] xl:w-[41%] 2xl:w-[30%] mx-auto mt-4 mb-10">Discover our portfolio for a glimpse into our expertise, showcasing achievements and diverse capabilities.</p>
+
+          <p className="text-[#6F5D5B] text-[20px] font-dmSans capitalize w-full md:w-[58%] xl:w-[58%] 2xl:w-[35%] mx-auto mt-4 mb-10" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">Discover our portfolio for a glimpse into our expertise, showcasing achievements and diverse capabilities.</p>
         </div>
 
         {/* Render the first 5 to 10 logos */}
