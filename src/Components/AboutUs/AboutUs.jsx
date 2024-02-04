@@ -7,7 +7,7 @@ const AboutUs = () => {
     <Container>
       <div className="md:flex justify-between items-center my-32" id="about">
         <div className="md:w-1/2" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800">
-          <img src={aboutImg} alt="Image" />
+          <img src={aboutImg} alt="Image" className="xl:w-[80%] heroImg" />
         </div>
 
         <div className="md:w-1/2 md:-mr-8 xl:-mr-20 mt-20 md:mt-6">
