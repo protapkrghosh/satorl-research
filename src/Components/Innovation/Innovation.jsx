@@ -9,7 +9,7 @@ const Innovation = () => {
       <Container>
         {/* Section heading info */}
         <div className='py-[109px]'>
-          <p className='font-dmSans text-[#5D423F] w-[95%] md:w-[65%] xl:w-[62%] mx-auto text-center text-[21px] capitalize'>Where ideas ignite, innovation takes flight, breaking the old chains, in decentralized domains – we champion the creators, share ownerships, and decentralize the gains</p>
+          <p className='font-dmSans text-[#5D423F] w-[95%] md:w-[65%] xl:w-[62%] 2xl:w-[40%] mx-auto text-center text-[21px] capitalize'>Where ideas ignite, innovation takes flight, breaking the old chains, in decentralized domains – we champion the creators, share ownerships, and decentralize the gains</p>
 
           {/* Cards  */}
           <div className='md:flex justify-center gap-6 mt-10 px-3'>
