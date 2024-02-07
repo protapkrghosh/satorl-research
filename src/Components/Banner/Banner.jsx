@@ -9,19 +9,12 @@ const Banner = () => {
       <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mt-16 mb-[85px]" id="home">
         {/* Contents */}
         <div className="md:w-1/2">
-          <div className="flex items-center">
+          <div>
             <p className="text-[#F6524E] text-[15px] font-semibold font-inter uppercase mr-2">Satori Ventures</p>
-            <div className="relative">
-              <img src={icon} alt="Icon" />
-              <div className="animate-ping absolute top-0 inline-flex h-5 w-5 bg-[#F6524E] rounded-full opacity-40"></div>
-            </div>
           </div>
 
           <div className="text-[42px] md:text-[62px] text-[#441611] font-dmSerifDisplay">
-            <div className="flex items-center" data-aos="fade-up" data-aos-duration="600">
-              <h2 className="mr-3">Fostering</h2>
-              <img src={avatar} alt="Peoples" className="w-[120px] mt-3" />
-            </div>
+            <h2 className="mr-3" data-aos="fade-up" data-aos-duration="600">Fostering</h2>
             <h2 className="md:-my-5" data-aos="fade-up" data-aos-duration="800">The <span className="text-[#9B0801]">Blockchain</span></h2>
             <h2 data-aos="fade-up" data-aos-duration="1000">Renaissance</h2>
           </div>
