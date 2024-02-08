@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import img from '../../assets/footer/Group 71033.png'
+import img from '../../assets/footer/satorl_white.png'
 import Container from '../../Components/Container/Container';
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
       <Container>
         <div className='md:flex md:justify-between items-center mb-12'>
           <Link to="/">
-            <img src={img} alt="Image" className='w-[130px] cursor-pointer' />
+            <img src={img} alt="Image" className='w-[135px] cursor-pointer' />
           </Link>
 
           <div className='font-dmSans flex flex-col md:flex-row gap-y-3 md:gap-x-10 text-white mt-5 md:mt-0'>
@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
         </div>
       </Container>
-      <p className='text-white text-[16px] text-center font-dmSans uppercase py-5 border-t border-[#4D211D]'>©{new Date().getFullYear()} SATORI RESEARCH. All Rights Reserved.</p>
+      <p className='text-white text-[16px] text-center font-dmSans uppercase py-5 border-t border-[#4D211D]'>©{new Date().getFullYear()} Satori Ventures. All Rights Reserved.</p>
     </div>
   );
 };

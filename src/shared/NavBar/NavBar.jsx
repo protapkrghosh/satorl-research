@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
-import img from '../../assets/logo/design 1.png'
+import img from '../../assets/logo/satorl_color.png'
 import Container from '../../Components/Container/Container';
 import { MdArrowOutward } from "react-icons/md";
 
@@ -43,7 +43,7 @@ const NavBar = () => {
           </div>
 
           <Link to="">
-            <img src={img} alt="Logo" className='cursor-pointer w-36 md:w-full' />
+            <img src={img} alt="Logo" className='cursor-pointer w-32 md:w-full' />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
