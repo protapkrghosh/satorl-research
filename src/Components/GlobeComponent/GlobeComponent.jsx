@@ -24,7 +24,7 @@ const GlobeComponent = () => {
   }, []);
 
   return (
-    <div className='md:-mt-8 md:ml-20 2xl:ml-40'>
+    <div className='md:-mt-8 md:ml-20'>
       <Globe
         width={550}
         height={490}
