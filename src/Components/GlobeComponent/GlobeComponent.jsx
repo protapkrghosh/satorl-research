@@ -14,16 +14,6 @@ const GlobeComponent = () => {
     },
   ];
 
-
-  // useEffect(() => {
-  //   // load data
-  //   fetch('../../public/map.geojson')
-  //     .then(res => res.json())
-  //     .then(setCountries);
-  //   console.log(countries)
-  // }, []);
-
-
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -38,7 +28,6 @@ const GlobeComponent = () => {
         console.error('Error fetching data:', error);
       }
     };
-
     fetchData();
   }, []);
 
@@ -49,7 +38,6 @@ const GlobeComponent = () => {
         height={550}
         pointsData={myData}
         backgroundColor='#fff'
-
         showGraticules={true}
         atmosphereColor='#9b0901f8'
         atmosphereAltitude='0.25'
