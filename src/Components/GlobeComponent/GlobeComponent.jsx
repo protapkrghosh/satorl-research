@@ -24,13 +24,13 @@ const GlobeComponent = () => {
   }, []);
 
   return (
-    <div className='md:-mt-8 md:ml-20 2xl:ml-40'>
+    <div className='md:-mt-8 md:ml-20 heroImg'>
       <Globe
         width={550}
-        height={490}
+        height={550}
         pointsData={myData}
         backgroundColor='#fff'
-        
+
         showGraticules={true}
         atmosphereColor='#9b0901f8'
         atmosphereAltitude='0.25'
