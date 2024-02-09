@@ -15,12 +15,31 @@ const GlobeComponent = () => {
   ];
 
 
+  // useEffect(() => {
+  //   // load data
+  //   fetch('../../public/map.geojson')
+  //     .then(res => res.json())
+  //     .then(setCountries);
+  //   console.log(countries)
+  // }, []);
+
+
   useEffect(() => {
-    // load data
-    fetch('../../public/map.geojson')
-      .then(res => res.json())
-      .then(setCountries);
-    console.log(countries)
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/map.geojson');
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        const data = await response.json();
+        setCountries(data);
+        console.log(data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
   }, []);
 
   return (
