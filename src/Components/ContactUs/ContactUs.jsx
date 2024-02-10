@@ -2,6 +2,7 @@ import Container from "../Container/Container";
 import { useForm } from "react-hook-form"
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
+import toast from 'react-hot-toast';
 
 const ContactUs = () => {
   const form = useRef();
@@ -19,7 +20,8 @@ const ContactUs = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          toast.success('Email send successfully')
+          // console.log('SUCCESS!');
         },
         (error) => {
           console.log('FAILED...', error.text);
