@@ -1,15 +1,34 @@
 import Container from "../Container/Container";
 import { useForm } from "react-hook-form"
+import emailjs from '@emailjs/browser';
+import { useRef } from "react";
+import toast from 'react-hot-toast';
 
 const ContactUs = () => {
+  const form = useRef();
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors },
   } = useForm()
 
-  const onSubmit = (data) => console.log(data)
+  const onSubmit = (data) => {
+    emailjs
+      .sendForm('service_q7rgzm8', 'template_4zis24c', form.current, {
+        publicKey: 'RElQ17WxbehSv1AID',
+      })
+      .then(
+        () => {
+          reset();
+          toast.success('Email send successfully');
+          // console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
   return (
     <div className="bg-[#F6F4F2] pt-[100px] pb-[120px]" id="contact">
@@ -23,7 +42,7 @@ const ContactUs = () => {
 
           {/* Contact Form */}
           <div className="md:w-1/2 md:mx-5">
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form ref={form} onSubmit={handleSubmit(onSubmit)}>
               <div className="md:flex gap-x-4 mb-3">
                 <div className="form-control md:w-1/2 mb-3 md:mb-0">
                   <label className="label mb-1">
