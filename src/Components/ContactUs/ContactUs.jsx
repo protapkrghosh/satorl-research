@@ -9,7 +9,7 @@ const ContactUs = () => {
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors },
   } = useForm()
 
@@ -20,7 +20,8 @@ const ContactUs = () => {
       })
       .then(
         () => {
-          toast.success('Email send successfully')
+          reset();
+          toast.success('Email send successfully');
           // console.log('SUCCESS!');
         },
         (error) => {
