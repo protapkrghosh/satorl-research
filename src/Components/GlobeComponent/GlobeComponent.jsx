@@ -23,7 +23,7 @@ const GlobeComponent = () => {
         }
         const data = await response.json();
         setCountries(data);
-        console.log(data);
+        // console.log(data);
       } catch (error) {
         console.error('Error fetching data:', error);
       }
