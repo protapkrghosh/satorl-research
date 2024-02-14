@@ -33,7 +33,7 @@ const Portfolio = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-5">
             {companies.slice(0, showMore ? 25 : 10).map((company, index) => (
               <div key={index} className="flex justify-center items-center border-l p-5 relative group">
-                <img src={company.logo} alt='Image' className="w-auto h-7 group-hover:scale-110 duration-300" />
+                <img src={company.logo} alt='Image' className="w-auto h-7 group-hover:scale-110 duration-300 2xl:mt-[7%]" />
                 <div className="border-t border-[#ebedf0f6] w-[95%] absolute -mb-[42%] ml-5"></div>
               </div>
             ))}
@@ -46,7 +46,7 @@ const Portfolio = () => {
                 <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-subgrid gap-5 lg:w-[59%] mx-auto mt-4">
                   {companies.slice(25, 28).map((company, index) => (
                     <div key={index} className="flex justify-center items-center border-l p-5 relative group">
-                      <img src={company.logo} alt='Image' className="w-auto h-7 group-hover:scale-110 duration-300" />
+                      <img src={company.logo} alt='Image' className="w-auto h-7 group-hover:scale-110 duration-300 2xl:mt-[7%]" />
                       <div className="border-t border-[#ebedf0f6] w-[95%] absolute -mb-[42%] ml-5"></div>
                     </div>
                   ))}
