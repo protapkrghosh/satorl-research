@@ -39,7 +39,7 @@ const Portfolio = () => {
             ))}
           </div>
 
-          {/* last three card */}
+          {/* Lasts three card */}
           {
             !showMore ? '' : (
               <div>
