@@ -24,9 +24,9 @@ const Portfolio = () => {
           {
             showMore ? <>
               <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute lg:mt-[17.2%] xl:mt-[17.2%] ml-[96.5%] rotate-90"></div>
-              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute lg:mt-[25%] xl:mt-[26.2%] ml-[96.5%] rotate-90"></div>
-              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute lg:mt-[32.5%] xl:mt-[35%] ml-[96.5%] rotate-90"></div>
-              <div className="md:border-t border-[#ebedf0f6] w-16 h-10 absolute lg:mt-[40%] xl:mt-[44%] ml-[76.6%] rotate-90"></div>
+              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute lg:mt-[25%] xl:mt-[26.2%] 2xl:mt-[25%] ml-[96.5%] rotate-90"></div>
+              <div className="border-t border-[#ebedf0f6] w-16 h-10 absolute lg:mt-[32.5%] xl:mt-[35%] 2xl:mt-[33%] ml-[96.5%] rotate-90"></div>
+              <div className="md:border-t border-[#ebedf0f6] w-16 h-10 absolute lg:mt-[40%] xl:mt-[44%] 2xl:mt-[40%] ml-[76.6%] 2xl:ml-[77.3%] rotate-90"></div>
             </> : ''
           }
 
